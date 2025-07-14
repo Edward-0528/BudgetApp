@@ -1,15 +1,9 @@
-import profile from '../assets/imgs/profile.ed.jpg';
+import Nav from "./Nav";
+
 function Header() {
   return (
     <div className="bg-zinc-900 text-white">
-        {/* Navigation bar */}
-        <div className="max-w-7xl bg-zinc-900 text-white mx-auto py-6 px-4 sm:px-6 lg:px-8 justify-between flex">
-          <ion-icon name="notifications-outline" className="w-8 h-8"></ion-icon>
-          <div className="flex items-center space-x-4">
-            <p className="text-lg font-semibold">Welcome, Edward</p>
-          <img src={profile} alt="Profile" className="w-14 h-14 rounded-full" />
-          </div>
-        </div>
+        <Nav />
         {/* Card and content */}
         <div className="App lg:w-1/2 sm:w-4/5 md:w-1/2 h-2/3 mx-auto px-4 sm:px-6 lg:px-8 bg-zinc-800 rounded-3xl shadow-lg mt-4 mb-4 p-4 border-white">
             <h2 className="text-3xl font-thin text-justify pl-5 pt-10 text-white">Total Balance</h2>
