@@ -6,7 +6,7 @@ function Overview() {
   return (
     <>
       {/* Income Section */}
-      <div className="w-full mt-6 flex  flex-col gap-6 lg:flex-row justify-evenly">
+      <div className="bg-white w-full flex  flex-col gap-6 lg:flex-row justify-evenly">
         <div className="flex flex-col items-center lg:items-center">
           <p className="text-lg font-semibold">Gross Income</p>
           <BarChart

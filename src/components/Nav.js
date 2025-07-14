@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../assets/imgs/profile.ed.jpg';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
