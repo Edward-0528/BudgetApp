@@ -1,23 +1,40 @@
 import Nav from "./Nav";
+import { RiVisaLine } from "react-icons/ri";
 
 function Header() {
   return (
     <div className="bg-zinc-900 text-white">
-        <Nav />
-        {/* Card and content */}
-        <div className="App lg:w-1/2 sm:w-4/5 md:w-1/2 h-2/3 mx-auto px-4 sm:px-6 lg:px-8 bg-zinc-800 rounded-3xl shadow-lg mt-4 mb-4 p-4 border-white">
-            <h2 className="text-3xl font-thin text-justify pl-5 pt-10 text-white">Total Balance</h2>
-            <h1 className="text-5xl font-black text-justify pl-5 pt-2 text-white">$10,000</h1>
-            <p className="text-xl font-thin text-justify pl-5 pt-2 text-white">This is your total balance across all accounts.</p>
-        
-            
-        <div className="flex h-3.5 justify-between items-center mt-6 pt-10 pb-14">
-        <p className="text-xl font-thin text-justify pl-5 pt-2 text-white">**** **** **** 6816</p>
-        <ion-icon name="card-outline" className="w-12 h-12"></ion-icon>
-        </div>
-
+      <Nav />
+      {/* Realistic Debit Card */}
+      <div className="flex justify-center items-center mt-8 mb-8">
+        <div className="w-[370px] h-[220px] bg-gradient-to-br from-blue-700 via-indigo-800 to-purple-900 rounded-3xl shadow-2xl p-6 relative overflow-hidden">
+          {/* Card Chip */}
+          <div className="absolute top-8 left-6 w-10 h-7 bg-yellow-300 rounded-sm opacity-80"></div>
+          {/* Card Logo */}
+          <RiVisaLine className="absolute top-8 right-6 w-16 h-16 text-white opacity-90" />
+          {/* Card Number */}
+          <div className="absolute top-20 left-6 text-xl tracking-widest font-mono text-white">
+            **** **** **** 6816
           </div>
+          {/* Card Balance */}
+          <div className="absolute bottom-16 left-6">
+            <span className="text-sm text-gray-300">Balance</span>
+            <div className="text-3xl font-bold text-white">$5,272.14</div>
+          </div>
+          {/* Cardholder & Expiry */}
+          <div className="absolute bottom-6 left-6 flex flex-row items-end justify-between w-[85%]">
+            <div>
+              <span className="text-xs text-gray-400">CARDHOLDER</span>
+              <div className="text-base font-semibold text-white">Edward Smith</div>
+            </div>
+            <div>
+              <span className="text-xs text-gray-400">EXPIRES</span>
+              <div className="text-base font-semibold text-white">08/28</div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   );
 }
 
