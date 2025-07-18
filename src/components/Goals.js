@@ -1,8 +1,7 @@
 import { IoIosAddCircleOutline } from "react-icons/io";
-import { FaPlane, FaCar, FaGlassMartiniAlt, FaShoppingCart, FaHeart } from "react-icons/fa";
+import { FaPlane, FaCar, FaGlassMartiniAlt, FaShoppingCart } from "react-icons/fa";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText'; 
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import React from 'react';

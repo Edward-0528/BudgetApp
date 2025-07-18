@@ -1,7 +1,5 @@
 import React from 'react';
 import { IoIosAddCircleOutline } from "react-icons/io";
-import { BarChart } from '@mui/x-charts/BarChart';
-import { PieChart } from '@mui/x-charts/PieChart';
 import Typography from '@mui/material/Typography';
 import LinearProgress from '@mui/material/LinearProgress';
 import Button from '@mui/material/Button';

@@ -1,6 +1,5 @@
 import React from 'react';
 import profileImg from '../assets/imgs/profile.ed.jpg';
-import { Link } from 'react-router-dom';
 import { MdAddCard } from "react-icons/md";
 
 function Nav() {
