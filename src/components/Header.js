@@ -1,7 +1,10 @@
 import Nav from "./Nav";
 import { RiVisaLine } from "react-icons/ri";
+import { useProfile } from '../hooks/useProfile';
 
 function Header() {
+  const { profile } = useProfile();
+
   return (
     <div className="bg-zinc-900 text-white">
       <Nav />
@@ -25,7 +28,7 @@ function Header() {
           <div className="absolute bottom-6 left-6 flex flex-row items-end justify-between w-[85%]">
             <div>
               <span className="text-xs text-gray-400">CARDHOLDER</span>
-              <div className="text-base font-semibold text-white">Edward Smith</div>
+              <div className="text-base font-semibold text-white">{profile.fullName}</div>
             </div>
             <div>
               <span className="text-xs text-gray-400">EXPIRES</span>
