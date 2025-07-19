@@ -1,4 +1,4 @@
-import { FaCar, FaShoppingCart, FaPlane, FaUniversity, FaMusic, FaHamburger, FaCoffee, FaApple, FaBus, FaUtensils, FaTaxi, FaGasPump, FaMobileAlt, FaBook, FaPizzaSlice, FaGamepad, FaBeer, FaTshirt, FaLaptop } from "react-icons/fa";
+import { FaShoppingCart, FaUniversity, FaMusic, FaHamburger, FaCoffee, FaApple, FaBus, FaUtensils, FaTaxi, FaGasPump, FaMobileAlt, FaBook, FaPizzaSlice, FaGamepad, FaBeer, FaTshirt, FaLaptop } from "react-icons/fa";
 
 export const initialTransactions = [
   {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { initialTransactions, getIconComponent } from '../data/transactions';
 
 // LocalStorage key for transactions

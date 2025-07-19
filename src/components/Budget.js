@@ -161,7 +161,7 @@ function Budget() {
       <div className="w-full max-w-2xl">
         <Typography variant="subtitle1" className="font-bold mb-4 text-zinc-800">Active budgets</Typography>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {budgets.map((budget, idx) => (
+          {budgets.map((budget) => (
             <div key={budget.name} className="bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between relative">
               {/* Delete button */}
               <IconButton

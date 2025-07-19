@@ -195,7 +195,7 @@ function Goals() {
       <div className="w-full max-w-2xl">
         <Typography variant="subtitle1" className="font-bold mb-4 text-zinc-800">My goals</Typography>
         <List sx={{ width: '100%', maxWidth: 800, bgcolor: 'transparent' }}>
-          {goals.map((goal, idx) => (
+          {goals.map((goal) => (
             <div key={goal.name} className="bg-white rounded-xl shadow-lg p-4 mb-6 flex items-center relative">
               {/* Delete button */}
               <IconButton
