@@ -1,9 +1,16 @@
 import Nav from "./Nav";
 import { RiVisaLine } from "react-icons/ri";
 import { useProfile } from '../hooks/useProfile';
+import { useTransactions } from '../hooks/useTransactions';
 
 function Header() {
   const { profile } = useProfile();
+  const transactions = useTransactions();
+  
+  // Calculate total balance from all transactions
+  const totalBalance = transactions.reduce((sum, transaction) => {
+    return sum + transaction.amount;
+  }, 0);
 
   return (
     <div className="bg-zinc-900 text-white">
@@ -22,7 +29,12 @@ function Header() {
           {/* Card Balance */}
           <div className="absolute bottom-16 left-6">
             <span className="text-sm text-gray-300">Balance</span>
-            <div className="text-3xl font-bold text-white">$5,272.14</div>
+            <div className="text-3xl font-bold text-white">
+              ${totalBalance.toLocaleString('en-US', { 
+                minimumFractionDigits: 2, 
+                maximumFractionDigits: 2 
+              })}
+            </div>
           </div>
           {/* Cardholder & Expiry */}
           <div className="absolute bottom-6 left-6 flex flex-row items-end justify-between w-[85%]">

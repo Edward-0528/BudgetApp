@@ -26,7 +26,7 @@ function Overview() {
   
   const totalBalance = totalIncome - totalExpenses;
   const percentLeft = totalIncome > 0 ? Math.round((totalBalance / totalIncome) * 100) : 0;
-
+  export const grandTotal = totalBalance;
 
   // Determine chart colors based on balance
   const isPositive = totalBalance >= 0;
@@ -186,6 +186,7 @@ function Overview() {
       </div>
     </div>
   );
+  
 }
 
 export default Overview;
